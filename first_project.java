@@ -48,8 +48,9 @@ public class first_project{
          "7. (ii) Other shareholdings, valued at more than £70,000",
          "8. Miscellaneous",
          "9. Family members employed and paid from parliamentary expenses",
-         "10. Family members engaged in lobbying the public sector on behalf of a third party or client",
-         "Nil"};
+         "Nil",
+         "10. Family members engaged in lobbying the public sector on behalf of a third party or client"
+        };
 
     String [][] sorting = new String [check_numbers.size()+1][names.size()+1];
     int counter = 0;
@@ -130,7 +131,8 @@ public class first_project{
     }   
     pdfScanner.close();
     bufferedReader.close();
-
+System.out.println(Arrays.deepToString(sorting));
+/** 
     for(int i = 0; i < sorting.length;i++) {
       //System.out.println("We are at " + sorting[i][0] +"\n\n\n\n\n");
       for(int j = 0; j < sorting[i].length;j++) {
@@ -138,11 +140,157 @@ public class first_project{
           sorting[i][j] = "";
           sorting[i][j] = i + " does not exist";
         }
-        if(j == sorting[i].length-150) {
-          System.out.println(sorting[i][j]);
+        if (i == 13) {
+          sorting[i][j] = sorting[i][j].substring(7);
         }
+          System.out.println(sorting[i][j] + "");
+        
       }
     }
+    **/
+    int has = 0, hasNot = 0;
+    for (int j = 1; j < sorting[1].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[1][j] + "\n");
+      if(sorting[1][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[0] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[2].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[2][j] + "\n");
+      if(sorting[2][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[1] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[3].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[3][j] + "\n");
+      if(sorting[3][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[2] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[4].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[4][j] + "\n");
+      if(sorting[4][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[3] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[5].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[5][j] + "\n");
+      if(sorting[5][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[4] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[6].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[6][j] + "\n");
+      if(sorting[6][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[5] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[7].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[7][j] + "\n");
+      if(sorting[7][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[6] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[8].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[8][j] + "\n");
+      if(sorting[8][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[7] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[9].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[9][j] + "\n");
+      if(sorting[9][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[8] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[10].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[10][j] + "\n");
+      if(sorting[10][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[9] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[11].length;j++) {
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[11][j] + "\n");
+      if(sorting[11][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[10] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[12].length;j++) {
+      //ystem.out.println("I am " + sorting[0][j] + " and I get " + sorting[12][j] + "\n");
+      if(sorting[12][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+    }
+    System.out.println(types[11] + " this many people have it " + has + " and this many people don't " + hasNot);
+    has = 0;
+    hasNot = 0;
+    for (int j = 1; j < sorting[13].length;j++) {
+      if(sorting[13][j] == null) {
+        hasNot++;
+      } else {
+        has++;
+      }
+      //System.out.println("I am " + sorting[0][j] + " and I get " + sorting[13][j] + "\n");
+    }
+    System.out.println(types[12] + " this many people have it " + has + " and this many people don't " + hasNot);
+    
     //System.out.print(Arrays.deepToString(sorting));
 
     // System.out.println(Arrays.toString(temp_array));
